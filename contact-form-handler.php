@@ -12,9 +12,9 @@ $name = $_POST['name'];
 $email_address = $_POST['email']; 
 $message = $_POST['message']; 
 
-if ( $request_method !~ ^POST$ ) {
-add_header Allow “POST” always;
-return 405;
+add_header Allow "GET, POST, HEAD" always;
+if ( $request_method !~ ^(GET|POST|HEAD)$ ) {
+	return 405;
 }
 
 if (!preg_match(
