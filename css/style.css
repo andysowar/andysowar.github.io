@@ -27,7 +27,7 @@
 
 	nav ul {
 		padding: 10px;
-		background: rgba(0, 0, 0, 0.5)
+		/*background: rgba(0, 0, 0, 0.5);*/
 		position: relative;
 	}
 
@@ -46,11 +46,11 @@
 	}
 
 	nav ul ul {
-	display: none;
-	/*position: absolute; top: 100%;*/
+	/*display: none;*/
+	position: absolute;
 }
 
-	nav ul li:hover > ul {
+	nav ul li:hover ul {
 		display: block;
 	}
 
