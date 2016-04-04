@@ -12,6 +12,11 @@ $name = $_POST['name'];
 $email_address = $_POST['email']; 
 $message = $_POST['message']; 
 
+if ( $request_method !~ ^POST$ ) {
+add_header Allow “POST” always;
+return 405;
+}
+
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
 $email_address))
