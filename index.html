@@ -52,16 +52,15 @@
 			<a href="#close" title="Close" class="close">X</a>
 			<h2>Say hello!</h2>
 
-			<form action="MAILTO:andy.sowar@gmail.com" method="post" enctype="text/plain">
-				Name:<br>
-				<input type="text" name="name" value="your name"><br>
-				E-mail:<br>
-				<input type="text" name="mail" value="your email"><br>
-				Comment:<br>
-				<input type="text" name="comment" value="your comment" size="50"><br><br>
-				<input type="submit" value="Send">
-				<input type="reset" value="Reset">
-				</form>
+			<form method="POST" name="contactform" action="contact-form-handler.php">
+			    Your Name:
+			    <p><input type="text" name="name"></p>
+			    Email Address:
+			    <p><input type="text" name="email"></p>
+			    Message:
+			    <p><textarea name="message"></textarea></p>
+			    <input type="submit" value="Submit">
+			</form>
 			<!-- Javascript validation for contact form -->
 			<script language="JavaScript">
 				var frmvalidator  = new Validator("contactform");
