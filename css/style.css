@@ -2,11 +2,15 @@
 
    body {
    		margin: 0 auto;
+   		font-family: Lato;
+   		text-align: center;
+    	background: url("../images/triangle-background.jpg");
+		background-size: cover;
+    	color: white;
    }
 
-	h1 {
+/*	h1 {
 		font-size: 70px;
-		font-family: helvetica;
 		text-align: center;
 	}
 
@@ -20,14 +24,13 @@
 
 	header {
 		text-align: center;
-		font-family: helvetica;
 		background: rgba(0, 0, 0, 0.5)
 		color: white;
 	}
 
 	nav ul {
 		padding: 10px;
-		/*background: rgba(0, 0, 0, 0.5);*/
+		background: rgba(0, 0, 0, 0.5);
 		position: relative;
 	}
 
@@ -47,9 +50,8 @@
 
 	nav ul ul {
 	/*display: none;*/
-	position: absolute;
-}
-
+/*}*/
+/*
 	nav ul li:hover ul {
 		display: block;
 	}
@@ -57,7 +59,7 @@
 	nav ul ul li {
 		float: none;
 	}
-
+*/
 	video#bgvid { 
 	    position: fixed;
 	    top: 50%;
@@ -72,14 +74,6 @@
 	    background: url(assets/TimeLapseBoulder.mp4);
 	    background-size: cover; 
 	}
-
-	body {
-    	text-align: center;
-    	background: url("../images/triangle-background.jpg");
-		background-size: cover;
-    	color: white;
-    	font-family: helvetica;
-  }
 
 	
 	.modalDialog {
@@ -210,13 +204,6 @@
 	  transition: all 0.5s ease-out;
 	}
 
-	article {
-		font-size: 18px
-		font-family: helvetica; 
-		max-width: 900px;
-		padding: 20px;
-		margin: 0 auto;
-	}
 
 	input {
      	border: 0;
