@@ -3,64 +3,17 @@
    body {
    		margin: 0 auto;
    		font-family: Lato;
-   		text-align: center;
-    	background: url("../images/triangle-background.jpg");
+    	background: url(assets/dotpattern.png) repeat;
 		background-size: cover;
     	color: white;
    }
 
-/*	h1 {
-		font-size: 70px;
-		text-align: center;
-	}
+ /*  .overlay {
+		background: url(assets/dotpattern.png) repeat;
 
-	img {
-		margin: 40px 0px 0px 0px;
-		border: 7px solid white;
-		border-radius: 20px;
-		height: 200px;
-		width: 200px;
-	}
-
-	header {
-		text-align: center;
-		background: rgba(0, 0, 0, 0.5)
-		color: white;
-	}
-
-	nav ul {
-		padding: 10px;
-		background: rgba(0, 0, 0, 0.5);
-		position: relative;
-	}
-
-	nav ul li {
-		display: inline;
-		padding: 0px 10px 0px 10px;
-	}
-
-	nav a {
-		color: white;
-		text-decoration: none;
-	}
-
-	nav a:hover {
-		color: #00d9ff;
-	}
-
-	nav ul ul {
-	/*display: none;*/
-/*}*/
-/*
-	nav ul li:hover ul {
-		display: block;
-	}
-
-	nav ul ul li {
-		float: none;
 	}
 */
-	video#bgvid { 
+	#bgvid { 
 	    position: fixed;
 	    top: 50%;
 	    left: 50%;
@@ -72,9 +25,14 @@
 	    -webkit-transform: translateX(-50%) translateY(-50%);
 	    transform: translateX(-50%) translateY(-50%);
 	    background: url(assets/TimeLapseBoulder.mp4);
-	    background-size: cover; 
+	    background-size: cover;
 	}
 
+
+	.filter {
+    	-webkit-filter: blur(1px) saturate(4.5) hue-rotate(150deg) brightness(1) contrast(1.1) invert(0) sepia(0);
+        filter: blur(1px) saturate(4.5) hue-rotate(300deg) brightness(0.9) contrast(1.1) invert(.7) sepia(0);
+	}
 	
 	.modalDialog {
 	  position: fixed;
@@ -83,6 +41,7 @@
 	  right: 0;
 	  bottom: 0;
 	  left: 0;
+
 	  background: rgba(0, 0, 0, 0);
 	  z-index: 99999;
 	  -moz-transition: all 2s ease-out;
@@ -223,10 +182,7 @@
 		li {
 			display: block;
 			padding: 5px;
-		}
-		 #bgvid {
-        display: none;
-    	}
+		}	
 	}
 
 </style>
