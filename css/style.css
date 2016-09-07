@@ -31,7 +31,7 @@
 
 	.filter {
     	-webkit-filter: blur(1px) saturate(4.5) hue-rotate(150deg) brightness(1) contrast(1.1) invert(0) sepia(0);
-        filter: blur(1px) saturate(4.5) hue-rotate(300deg) brightness(0.9) contrast(1.1) invert(.7) sepia(0);
+        filter: blur(1px) saturate(4.5) hue-rotate(150deg) brightness(1) contrast(1.1) invert(0) sepia(0);
 	}
 	
 	.modalDialog {

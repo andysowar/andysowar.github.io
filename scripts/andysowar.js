@@ -1,11 +1,20 @@
 var vid = document.getElementById("bgvid");
+var toggle = false;
 
 vid.playbackRate = 0.5;
 vid.loop = true;
 
-vid.addEventListener("loadstart", function(){
-	this.classList.add("filter");
+
+vid.addEventListener("click", function(){
+	if(toggle === false){
+		this.classList.remove("filter");
+		toggle = true;
+	}else{
+		this.classList.add("filter");
+		toggle = false;
+	}
 })
+
 
 function randomFilter(){
 	
@@ -16,5 +25,5 @@ function randomFilter(){
 	var cont = Math.floor(Math.random() * 5);
 	var invert = Math.floor(Math.random() * 1);
 	var sepia = Math.floor(Math.random() * 1);
-	return "blur(" + blur + "px" + ") " + "saturate(" + sat + ") " + "hue(" + hue + "deg" + ") " + "brightness(" + bright + ") " + "contrast(" + cont + ") " + "invert(" + invert + ") " + "sepia(" + sepia + ");";
+	return "-webkit-filter: blur(" + blur + "px" + ") " + "saturate(" + sat + ") " + "hue(" + hue + "deg" + ") " + "brightness(" + bright + ") " + "contrast(" + cont + ") " + "invert(" + invert + ") " + "sepia(" + sepia + ");";
 }
