@@ -4,16 +4,20 @@ var toggle = false;
 vid.playbackRate = 0.5;
 vid.loop = true;
 
+$('video').click(function(){
+	$(this).toggleClass("filter");
+});
 
-vid.addEventListener("click", function(){
-	if(toggle === false){
-		this.classList.remove("filter");
-		toggle = true;
-	}else{
-		this.classList.add("filter");
-		toggle = false;
-	}
-})
+
+// vid.addEventListener("click", function(){
+// 	if(toggle === false){
+// 		this.classList.remove("filter");
+// 		toggle = true;
+// 	}else{
+// 		this.classList.add("filter");
+// 		toggle = false;
+// 	}
+// })
 
 
 function randomFilter(){
